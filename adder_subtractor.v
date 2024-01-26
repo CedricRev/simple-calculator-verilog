@@ -1,11 +1,11 @@
 module adder_subtractor(
   input [3:0] a, b,
-	input mode, // 0 = add, 1 = subtract
+  input mode, // 0 = add, 1 = subtract
   output [3:0] sum,
-	output cout, overflow
-	);
+  output cout, overflow
+  );
 	
-	wire wxor0, wxor1, wxor2, wxor3;
+  wire wxor0, wxor1, wxor2, wxor3;
   wire [2:0] faCout;
 	
   xor xor0(wxor0, mode, b[0]);
